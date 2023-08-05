@@ -1,0 +1,10 @@
+.mytag{
+    color:yellow;
+    border :2px;
+    border-style: solid;
+    border-color : black;
+    background-color: red;
+    font-size: 20px;
+    font-family: arial;
+    text-align: center;
+}
