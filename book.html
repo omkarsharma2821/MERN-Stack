@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .mycard{
+            width: 25%;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px 5px black;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: greenyellow;
+            background: linear-gradient(pink,rgb(233, 233, 212));
+        }
+        body{
+            display:flex;
+            margin:0;
+            justify-content: center; /*align center */
+            align-items: center;
+            height : 100vh;
+            background-image:url("https://img.freepik.com/free-vector/plain-red-blurred-background_1035-3332.jpg?w=740&t=st=1691349889~exp=1691350489~hmac=429968a7d29578d72d9573af7411140735ad2634a9913fb3e39a2524b2ea9e7b");
+            background-size: cover;
+            backdrop-filter: blur (10px);
+        }
+        .mybtn{
+                width: 100%;
+                background-color: blueviolet;
+                padding: 10px 5px;
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                border: none;
+                border-radius: 5px;
+                transition-property: all;
+                transition-duration: 300ms;
+            }
+</style>
+
+</head>
+<body>
+    <div class = "mycard">
+        <h1>Book Your Show</h1>
+        <!-- <h1 class="text">Ticket Booking</h1> -->
+        <p class = "text">Hope You Enjoy The Show !!</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" class="myinput"><br>
+
+            <label for="email">Email</label>
+            <input type="email" class="myinput"><br>
+
+            <label for="phone">Phone No</label>
+            <input type="tel"><br>
+
+            <label for="">Shift - </label>
+            <input type="radio"> Morning
+            <input type="radio"> Noon
+            <input type="radio" name="" id=""> Evening <br>
+
+            Seat - <input type="radio"> Silver
+            <input type="radio"> Gold
+            <input type="radio"> Diamond <br><br>
+
+            <button class = "mybtn">Pay</button>
+        </form>
+        </div>
+</body>
+</html>

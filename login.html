@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .mycard{
+                width: 25%;
+                border-radius: 10px;
+                box-shadow: 2px 3px 5px 5px black;
+                padding: 50px;
+                box-sizing: border-box;
+                background-color: greenyellow;
+                background: linear-gradient(pink,rgb(233, 233, 212));
+            }
+            body{
+                display:flex;
+                margin:0;
+                justify-content: center; /*align center */
+                align-items: center;
+                height : 100vh;
+                background-image:url("https://images.ctfassets.net/l5fkpck1mwg3/01SpI8zTZ2Lt8kB51odsb0/2ef3798e40d7d4d00fd742ac6049b527/BWW_UFC291_ImageBlock_landingpage_4000x3000.jpg");
+                background-size: cover;
+                backdrop-filter: blur (10px);
+            }
+            .myinput{
+                display: block;
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border-bottom: 2px solid black;
+                border-top: none;
+                border-left: none;
+                /* border: none; */
+                background-color: #eee;
+            }
+            .brand{
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: 4px;
+                text-align: center;
+            }
+            .text{
+                text-align: center;
+            }
+            .mybtn{
+                width: 100%;
+                background-color: blueviolet;
+                padding: 10px 5px;
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                border: none;
+                border-radius: 5px;
+                transition-property: all;
+                transition-duration: 300ms;
+            }
+            form{
+                margin-top: 50px;
+            }
+            .mybtn:hover{
+                transform: scale(1.1) translateY(5px);
+                box-shadow: 0-10px 10px -5px #eeee;
+            }
+    </style>
+</head>
+<body>
+    <div class = "mycard">
+    <p class = "brand">Brand Logo</p>
+    <h2 class="text">Member Login</h2>
+    <p class = "text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, officia.</p>
+    <form>
+        <label for="email">Email</label>
+        <input type="email" class="myinput"><br>
+
+        <label for="password">password</label>
+        <input type="password" class="myinput"><br>
+
+        <button class = "mybtn">Login</button>
+    </form>
+    </div>
+</body>
+</html>
