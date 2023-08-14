@@ -6,21 +6,110 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      header{
+        background-image: linear-gradient(0deg,#413a3aa6, black),url("https://media.istockphoto.com/id/1401190682/photo/old-photographic-equipment-can-be-used-as-a-background-web-banner-with-space-for-text.webp?b=1&s=170667a&w=0&k=20&c=IhfBtG4ns4219bM9ph1xq21yLGLOX0aTAKRUNYsIxVo=");
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        
+        display: flex;
+        align-items: center;
+        }
+    </style>
   </head>
-  <body>
-    <div>
+  <body class>
+    <header class="bg-dark text-white">
+      <div class="container py-5">
+        <h1 class="text-center display-1 fw-bold">Best Camera Offers</h1>
+        <h3 class="text-center fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, dolorem?</h3>
+        <div class="input-group mt-5 w-75 mx-auto">
+          <input type="text" class="form-control form-control-lg">
+          <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <!-- container is for spacing from side -->
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="https://static.langimg.com/thumb/msid-96886359,width-200,resizemode-4/canon-eos-r10-242mp-mirrorless-digital-camera-with-rf-s18-150mm-kit-lens-aps-c-sensor-23-fps-next-gen-auto-focus-next-level-image-stabilisation-4k-black-96886359.jpg" alt="">
                     <h4 class="text-muted">Canon</h4>
                     <h2>Digital Camera</h2>
-                    <div class="card-body"></div>
-                    <p>
-                        <i class="fa-solid fa-star text-warning"></i>
-                        <span>4.2 stars from <b>383736 </b>Reviews</span>
-                    </p>
-                    <div class="card-footer"></div>
+                    <div class="card-body">
+                      <p>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <span>4.2 stars from <b>383736 </b>Reviews</span>
+                      </p>
+                      <!-- for right float-end for left float-start -->
+                      <h1 class="float-start">15,999</h1>
+
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                      <button class="btn btn-outline-primary"><i class="fa-solid fa-bolt-lightning"></i>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://static.langimg.com/thumb/msid-96886359,width-200,resizemode-4/canon-eos-r10-242mp-mirrorless-digital-camera-with-rf-s18-150mm-kit-lens-aps-c-sensor-23-fps-next-gen-auto-focus-next-level-image-stabilisation-4k-black-96886359.jpg" alt="">
+                    <h4 class="text-muted">Canon</h4>
+                    <h2>Digital Camera</h2>
+                    <div class="card-body">
+                      <p>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <span>4.2 stars from <b>383736 </b>Reviews</span>
+                      </p>
+                      <!-- for right float-end for left float-start -->
+                      <h1 class="float-start">15,999</h1>
+
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                      <button class="btn btn-outline-primary"><i class="fa-solid fa-bolt-lightning"></i>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://static.langimg.com/thumb/msid-96886359,width-200,resizemode-4/canon-eos-r10-242mp-mirrorless-digital-camera-with-rf-s18-150mm-kit-lens-aps-c-sensor-23-fps-next-gen-auto-focus-next-level-image-stabilisation-4k-black-96886359.jpg" alt="">
+                    <h4 class="text-muted">Canon</h4>
+                    <h2>Digital Camera</h2>
+                    <div class="card-body">
+                      <p>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <span>4.2 stars from <b>383736 </b>Reviews</span>
+                      </p>
+                      <!-- for right float-end for left float-start -->
+                      <h1 class="float-start">15,999</h1>
+
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                      <button class="btn btn-outline-primary"><i class="fa-solid fa-bolt-lightning"></i>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://static.langimg.com/thumb/msid-96886359,width-200,resizemode-4/canon-eos-r10-242mp-mirrorless-digital-camera-with-rf-s18-150mm-kit-lens-aps-c-sensor-23-fps-next-gen-auto-focus-next-level-image-stabilisation-4k-black-96886359.jpg" alt="">
+                    <h4 class="text-muted">Canon</h4>
+                    <h2>Digital Camera</h2>
+                    <div class="card-body">
+                      <p>
+                          <i class="fa-solid fa-star text-warning"></i>
+                          <span>4.2 stars from <b>383736 </b>Reviews</span>
+                      </p>
+                      <!-- for right float-end for left float-start -->
+                      <h1 class="float-start">15,999</h1>
+
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                      <button class="btn btn-outline-primary"><i class="fa-solid fa-bolt-lightning"></i>Buy Now</button>
+                    </div>
                 </div>
             </div>
         </div>
