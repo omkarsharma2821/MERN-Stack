@@ -6,17 +6,14 @@
     <title>Streaming Happiness</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
-       .bg-img{
-        background-image: url('Red And Black Action Novel Book Cover.png');
+       .img{
+        background: url('Red And Black Action Novel Book Cover.png');
         /* background-size: contain; */
-        object-fit: cover;
-        /* background-position: center; */
-        /* height: 100vh; */
-        /* width: 100vh; */
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+        /* object-fit: cover; */
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
         }
         .navbar .navbar-nav .nav-items a{
           padding: 15px;
@@ -28,6 +25,7 @@
     </style>
   </head>
   <body>
+    <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    <div class="container-fluid">
      <a class="navbar-brand" href="#">UnlimitedTV</a>
@@ -74,7 +72,12 @@
      </div>
    </div>
  </nav>
-<img class="bg-img" src="Red And Black Action Novel Book Cover.png" class="img-fluid" alt="...">
+ <div class="img">
+  <div>
+    <h1>omkar</h1>
+  </div>
+ </div>
+</header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
