@@ -8,7 +8,7 @@ if(n%2 ===0){
     // let newMessage = 'wow';
     const pi = 3.14;
 
-    pi = 345.543;
+    // pi = 345.543;
     console.log('even');  
 }
 else{

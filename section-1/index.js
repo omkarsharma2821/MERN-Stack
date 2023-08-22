@@ -1,7 +1,7 @@
 console.log('hello javascript');
 // javascript is dynamically typed language
 // typescript is a superset of javascript
-// node --watchindex
+// node --watch filename
 console.log('good morning');
 
 myname = "omkar";
