@@ -1,6 +1,7 @@
-for(let i = 1; i*i <= 81; i++)
+num = 81;
+for(let i = 1; i*i <= num; i++)
 {
-    if(i*i === 81)
+    if(i*i === num)
         console.log("The number is perfect square");
     else 
     console.log("The number is not perfect square");

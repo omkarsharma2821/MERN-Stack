@@ -51,3 +51,8 @@ console.log(222 == '222');
 
 console.log(4^2);
 console.log(25**0.5);
+
+
+let name = "omkar";
+let hobby = "coding";
+console.log(`My name is ${name} and my hobby is ${hobby}`)
