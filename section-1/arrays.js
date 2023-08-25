@@ -28,5 +28,10 @@ console.log(movies);
 
 
 let nums = [34 , 12, 65, 18, 89, 23, 29];
-movies.splice(3,3);
+nums.splice(3,3);
 console.log(nums);
+
+console.log(...movies); //spread operator included in ES6
+console.log(['first', ...movies, 'last']); // add new element in the array without modifying the original array 
+
+console.log([...movies.slice(0,2), movies.at(-2)]);

@@ -1,4 +1,4 @@
-num = 81;
+num = 26;
 for(let i = 1; i*i <= num; i++)
 {
     if(i*i === num)
