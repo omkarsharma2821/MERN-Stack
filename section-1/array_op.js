@@ -1,7 +1,8 @@
 const nums = [23,24,225,2,5,2,5,1];
 for(let i =0; i<nums.length; i++)
 {
-    console.log(nums[i]);
+    // console.log(nums[i]);
+    // process.stdout.write($nums[i]);
 }
 
 console.log('--------------------');
@@ -11,6 +12,7 @@ for(let i of nums)
     console.log(i);
 }
 
+console.log('--------------------');
 
 
 // wap to print even 

@@ -20,7 +20,7 @@ isloggedin = true;
 console.log( typeof isLoggedIn);
 console.log( typeof isloggedin);
 
-if(age<=18){
+if(age>=18){
     console.log('Eligible for DL');
 }
 else{

@@ -10,7 +10,7 @@ console.log(movies.slice(2,5));
 
 // adding
 
-movies.push('dangal');
+// movies.push('dangal');
 movies.unshift('chachi 420');
 
 console.log(movies);
