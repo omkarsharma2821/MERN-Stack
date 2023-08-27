@@ -14,3 +14,21 @@ const ans3 = prices.filter( (p) => {return p<500 && p>200});
 const ans4 = prices.map( (p) => {return p+p*0.1 });
 console.log(ans4);
 
+const full_name_array = [
+    {name : 'Sachine Tendulkar', profession : 'cricketer', citizen : 'indian'},
+    {name : 'Suresh Raina', profession : 'cricketer', citizen : 'indian'},
+    {name : 'Ravindra jadeja', profession : 'cricketer', citizen : 'indian'},
+    {name : 'Rohit Sharma', profession : 'cricketer', citizen : 'indian'},
+    {name : 'Yuvraj singh', profession : 'cricketer', citizen : 'indian'}
+];
+
+const firstWordsNested = [];
+for(const full_name of full_name_array ){
+        const firstWord = full_name.split(' ')[0];
+        firstWordsNested.push(firstWord);
+}
+          
+          console.log("First words (nested):", firstWordsNested);
+
+// const First_names = user.map( (n) => {return user.name.split(' ')[0]});
+// console.log(First_names);

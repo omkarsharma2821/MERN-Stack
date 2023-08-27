@@ -30,11 +30,12 @@ const smartphoneList = [
     { brand : 'Samsung', model : 'M31', price : 19000, colors : ['white', 'blue', 'black'] },
     { brand : 'Realme', model : '8', price : 15000, colors : ['black', 'yellow'] },
     { brand : 'Oppo', model : 'F19', price : 17000, colors : ['blue', 'black', 'red'] },
-    { brand : 'Vivo', model : 'V20', price : 20000, colors : ['black', 'red', 'green'] },
+    { brand : 'Vivo', model : 'V20', price : 20000, colors : ['black', 'red', 'green'] }
 ];
 console.log(smartphoneList[0]);
 
 console.log(smartphoneList[0].colors[1]);
 smartphoneList[0].model = 'note 9';
 console.log(smartphoneList[0]);
+// console.log(smartphoneList);
 
