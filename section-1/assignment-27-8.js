@@ -14,7 +14,7 @@ console.log("<------------------------------------------------------------------
 
 const names = ['Sachin','Suresh','Ravindra','Rohit Sharma','ram','Tinku','riya'];
 const filter_names = names.filter( (names) => {return names.length>4});
-console.log("Filter names having lenght > 4" , filter_names);
+console.log("Names having lenght > 4 : " , filter_names);
 
 const full_name_array = [
     {name : 'Sachine Tendulkar', profession : 'cricketer', citizen : 'indian'},
