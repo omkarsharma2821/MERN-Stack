@@ -37,5 +37,5 @@ console.log(smartphoneList[0]);
 console.log(smartphoneList[0].colors[1]);
 smartphoneList[0].model = 'note 9';
 console.log(smartphoneList[0]);
-// console.log(smartphoneList);
+console.log(smartphoneList);
 
