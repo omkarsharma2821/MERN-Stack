@@ -22,7 +22,7 @@ movies.shift(); // remove from start
 
 console.log(movies);
 
-movies.splice(3, 2);
+movies.splice(2, 3);
 
 console.log(movies);
 

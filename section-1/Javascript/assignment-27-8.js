@@ -8,7 +8,7 @@ const full_Names = ['Sachine Tendulakr',
 const first_names = full_Names.map( (full_Names) => {return full_Names.split(' ')[0]});
 console.log("First Name :" , first_names);
 
-console.log("<----------------------------------------------------------------------------------->");
+console.log("<------------------------------------------------------------------>");
 
 // WAP to filter name having length greater than 4.
 
