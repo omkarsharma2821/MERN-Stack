@@ -6,6 +6,7 @@ import Login from './components/Login';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import Navbar from './components/Navbar';
+import EventHandling from './components/EventHandling';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         {/* <Link to ="/signup">Signup</Link> */}
         <Navbar />
          <Routes> 
-            <Route path= "/home" element= {<Home />}/>
+            <Route path= "/" element= {<Home />}/>
             <Route path= "/login" element= {<Login />}/>
             <Route path= "/signup" element= {<Signup />}/>
+            <Route path= "/event" element= {<EventHandling />}/>
             <Route path= "*" element= {<NotFound />}/>
          </Routes>
         </BrowserRouter>
