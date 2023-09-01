@@ -3,16 +3,20 @@ import './App.css';
 import Home from './components/Home';
 import Signup from './components/Signup';
 import Login from './components/Login';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
-      <h1>My react tab</h1>
+      {/* <h1>My react tab</h1> */}
 
         <BrowserRouter>
         {/* rouetes mtlb address create krna */}
+        {/* <Link to ="/login">Login</Link> */}
+        {/* <Link to ="/signup">Signup</Link> */}
+        <Navbar />
          <Routes> 
             <Route path= "/home" element= {<Home />}/>
             <Route path= "/login" element= {<Login />}/>

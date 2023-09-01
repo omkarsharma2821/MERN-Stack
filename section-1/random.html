@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <style>
+
+    .bodyDesignContact
+    {
+        background-image:  url("https://www.archtis.com/wp-content/uploads/2020/07/Dynamic-Watermark-Thumbprint-1.png");
+        background-size: cover;   
+
+    }
+    .card-design
+    {
+        width: 50%;   
+    }
+    .h2-card{
+        color:rgb(179, 157, 32);
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 2em;
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+.myinput-card{
+    display:block;
+    width:90%;
+    padding: 2px;
+    margin-bottom: 7px;
+    padding: 10px 10px;
+    background-color: white;
+    }
+   
+.raise:hover, .raise:focus {
+  box-shadow: 0 0.5em 1.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.raise {
+  --color: #ffa260;
+  --hover: rgb(179, 157, 32);
+}
+.button-card {
+  color: var(--color);
+  transition: 0.25s;
+}
+.button-card:hover, .button-card:focus {
+  border-color: var(--hover);
+  color:#92ad09;
+}
+
+.button-card {
+  background: none;
+  border: 3px solid;
+  font: inherit;
+  line-height: 1;
+ 
+  padding: 1em 2em;
+}
+
+.container-element{
+  width:35%;
+  height:20%;
+  
+}
+
+.item{ 
+align-content: center;
+text-align: center;
+padding: 20%;
+}
+
+.item-border{ 
+  border-right: 2px solid #e5ff60;
+  /* its a class for item-1 and item-2 border line */
+}
+.contact{
+  display: flex;
+  flex-direction: row ;
+  
+  justify-content: space-evenly;
+}
+.p1-contact{
+  color:rgb(246, 119, 140)
+}
+.p-contact{
+  color:rgb(162, 143, 30);
+  font-style: italic;
+}
+
+
+  
+   </style>
+
+  </head>
+  <!-- <body class=" text-align-center d-flex justify-content-center align-items-center vh-100 bg-body-secondary bodyDesignContact" > -->
+    <div class=" text-align-center d-flex justify-content-center align-items-center vh-100 bg-body-secondary bodyDesignContact" >
+    <div class="card card-design ">
+      <div class="container w-75 ">
+    <div class="row">
+       <h2 class="text-center site-title h2-card "><b>Get in touch with us!</b></h2>       
+     </div>
+
+    <div class= "container mx-auto contact site-title container-element">
+      <div class="item item-1 align-items-center item-border">
+        <p class="fs-5 p-contact"><b>PHONE</b> </p>
+        <i class="bi bi-telephone-fill  " style="color:rgb(179, 157, 32)"></i>
+        
+        <p class="p1-contact">+91123456789 <br>+91876456789 </p>
+        
+      </div> 
+      <div class="item item-2 item-border">
+        <p class="fs-5 p-contact"><b>ADDRESS</b></p>
+        <i class="bi bi-geo-alt-fill  fs-5" style="color:rgb(179, 157, 32)"></i>
+        
+        <p class="p1-contact">123-B,Tej Complex,Hazratganj</p>
+      </div> 
+      <div class="item item-3">
+        <p class="fs-5 p-contact"><b>EMAIL</b></p>
+        <i class="bi bi-envelope-at-fill fs-5" style="color:rgb(179, 157, 32)"></i>
+        <p class="p1-contact">zehrarasheeq@gmail.com </p>
+        
+      </div>
+    </div>
+    
+    <form>
+        <label for="name" style=" color:rgb(162, 143, 30); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 1.1em";>Full Name</label>
+        <input class="form-control form-control-lg my-input myinput-card" type="name">
+
+    <label for="mail" style=" color:rgb(179, 157, 32); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 1.1em";>Email</label>
+    <input class="form-control form-control-lg my-input myinput-card" type="email">
+
+    <label for="phone" style=" color:rgb(179, 157, 32); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 1.1em";>Phone Number</label>
+    <input class="form-control form-control-lg my-input myinput-card" type="tel">
+
+    <label for="message" style="color:rgb(179, 157, 32)";> Message</label>
+        <textarea class="form-control form-control-lg my-input myinput-card" rows = "3" cols = "23" name = "description"  >
+          </textarea>
+          <br><br>
+         <button class="raise button-card">Submit</button>
+    </form>
+      </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('.site-title',{
+         delay:200, // kitti deer baad animation play hoga
+        origin: 'top',
+        distance: '100px'   ,
+        duration: 500 ,// start hone se end hone tk 5s ka time lagega 
+        scale:1.5, 
+        
+      });
+    </script>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init( document.querySelectorAll ('.card'),{
+        max:3, //animation ke lie time ki kitti time limit tk hoga
+        speed:100,
+        
+        
+      });
+      </script>
+  </body>
+</html>
