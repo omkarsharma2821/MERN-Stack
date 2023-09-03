@@ -22,7 +22,11 @@ const Todo = () => {
                     <input type="text" className="form-control" onKeyDown={addNewTodo}/>
                 </div>
                 <div className="card-body">
-                    {todolist.map( (todo) => {return <p>{todo}</p>})}
+                    {todolist.map( (todo) => {return <div className='d-flex justify-content-between mb-3'>
+                        {/* d-flex se ek row me */}
+                        <h5>{todo}</h5>
+                        <button className="btn btn-danger">Delete</button>
+                        </div>})}
                 </div>
             </div>
         </div>
