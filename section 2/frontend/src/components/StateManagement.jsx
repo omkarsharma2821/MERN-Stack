@@ -6,4 +6,4 @@ const StateManagement = () => {
   )
 }
 
-export default StateManagement
+export default StateManagement;
