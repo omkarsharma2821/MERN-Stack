@@ -14,7 +14,7 @@ const Signup = () => {
   <div className="d-flex justify-content-center align-items-center vh-50 bg-body-secondary">
     <div className="card w-75 py-2 col-6 col-md-6">
       <div className="p-4">
-        <h2 className="text-center mt-3">Sign Up, Now</h2>
+        <h2 className="text-center mt-3">SignUp, Now</h2>
         <label>Name</label>
         <input
           type="text"
@@ -33,8 +33,8 @@ const Signup = () => {
           className="form-control mt-2 mb-4"
           placeholder="Phone"
         />
-        <label htmlFor="">Message</label>
-        <input type="text" className="form-control mt-2 mb-4" />
+        <label htmlFor="">Password</label>
+        <input type="password" className="form-control mt-2 mb-4" placeholder='password'/>
         <button className="col-6 text-center btn btn-danger w-100 mt-2">
           Submit
         </button>
