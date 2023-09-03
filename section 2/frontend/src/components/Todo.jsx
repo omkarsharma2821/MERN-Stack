@@ -30,7 +30,7 @@ const Todo = () => {
                         <button className="btn btn-danger">Delete</button>
                         </div>
                     );
-                    })};
+                    })}
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
       Navbar
     </a>
     <button
@@ -27,16 +27,6 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/login">
-            Login
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to = "/signup">
-            Signup
-          </NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink className="nav-link" to = "/event">
             Event Handling
           </NavLink>
@@ -52,17 +42,17 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
-      </form>
+      <button className='d-flex px-4 btn btn-outline-primary me-2'>
+          <NavLink className="nav-link" to="/login">
+            Login
+          </NavLink>
+      </button>
+      <button className='d-flex px-4 btn btn-outline-primary active'>
+          <NavLink className="nav-link" to="/signup">
+            Sign up
+          </NavLink>
+      </button>
+         
     </div>
   </div>
 </nav>

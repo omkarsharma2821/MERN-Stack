@@ -14,7 +14,7 @@ const Signup = () => {
   <div className="d-flex justify-content-center align-items-center vh-50 bg-body-secondary">
     <div className="card w-75 py-2 col-6 col-md-6">
       <div className="p-4">
-        <h2 className="text-center mt-3">SignUp, Now</h2>
+        <h2 className="text-center mt-3">Sign Up</h2>
         <label>Name</label>
         <input
           type="text"
