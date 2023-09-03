@@ -26,7 +26,8 @@ const Todo = () => {
                         {/* d-flex se ek row me */}
                         <h5>{todo}</h5>
                         <button className="btn btn-danger">Delete</button>
-                        </div>})}
+                        </div>
+                    })};
                 </div>
             </div>
         </div>
