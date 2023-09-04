@@ -3,6 +3,9 @@
   color: crimson !important;
   font-weight: bold;
 }
-.dibba{
-  align-content: baseline;
+.bg{
+  background-image: url(./background.png);
+}
+.color{
+  background-color: black;
 }

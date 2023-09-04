@@ -23,15 +23,15 @@ const Todo = () => {
     }
     
   return (
-    <div>
+    <div className='bg vh-100 '>
         <div className="container">
-            <h1 className="text-center fw-bold bg-black text-white my-4 p-3 rounded w-50 mx-auto">!! My To do List !!</h1>
-            <div className="card w-50 mx-auto p-2">
+            <h1 className="text-center fw-bold bg-black text-white my-0 rounded w-75 mx-auto py-5">!! My To Do List !!</h1>
+            <div className="card w-75 mx-auto p-4">
                 <div className="card-header">
                     <input type="text" className="form-control border-4" placeholder='Enter Your Task Here'onKeyDown={addNewTodo}/>
                 </div>
                     {/* d-flex se ek row me */}
-                <div className="card-body p-0">
+                <div className="card-body ">
                     {todolist.map( (todo, index) => {
                         return (
                         <div className={`d-flex justify-content-between p-4 ${index%2===0 ? 'bg-body-secondary': ''}`}>
