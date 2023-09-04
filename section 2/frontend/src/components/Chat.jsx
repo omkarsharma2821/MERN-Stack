@@ -16,7 +16,7 @@ const Chat = () => {
     <div>
         <div className="container ">
             <h1 className="text-center my-5">ChatApp</h1>
-            <div className="card p-5 w-100">
+            <div className="card p-5 w-75 mx-auto">
                 <div className="card-header ">
                     <input type="text" className="form-control" onKeyDown={addNewChat}/>
                 </div>
@@ -26,7 +26,7 @@ const Chat = () => {
                         return (
                         <div className='d-flex justify-content-between mb-3'>
                         <h5>{chat}</h5>
-                        <button className="btn btn-danger">Send</button>
+                        <button className="btn btn-danger rounded-pill">send</button>
                         </div>
                     );
                     })}

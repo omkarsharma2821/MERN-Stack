@@ -25,10 +25,10 @@ const Todo = () => {
   return (
     <div>
         <div className="container">
-            <h1 className="text-center my-5">Todo List</h1>
-            <div className="card">
+            <h1 className="text-center fw-bold bg-black text-white my-4 p-3 rounded w-50 mx-auto">!! My To do List !!</h1>
+            <div className="card w-50 mx-auto p-2">
                 <div className="card-header">
-                    <input type="text" className="form-control" onKeyDown={addNewTodo}/>
+                    <input type="text" className="form-control border-4" placeholder='Enter Your Task Here'onKeyDown={addNewTodo}/>
                 </div>
                     {/* d-flex se ek row me */}
                 <div className="card-body p-0">
