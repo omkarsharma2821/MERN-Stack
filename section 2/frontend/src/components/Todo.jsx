@@ -31,10 +31,10 @@ const Todo = () => {
                     <input type="text" className="form-control" onKeyDown={addNewTodo}/>
                 </div>
                     {/* d-flex se ek row me */}
-                <div className="card-body">
+                <div className="card-body p-0">
                     {todolist.map( (todo, index) => {
                         return (
-                        <div className='d-flex justify-content-between mb-3'>
+                        <div className={`d-flex justify-content-between p-4 ${index%2===0 ? 'bg-body-secondary': ''}`}>
                         <h5>{todo}</h5>
                         <button className="btn btn-danger" onClick={() => {removeTodo(index)}} >Delete</button>
                         </div>
