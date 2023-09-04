@@ -6,7 +6,7 @@ const Login = () => {
     <div className="d-flex justify-content-center align-items-center vh-100 bg-body-secondary">
   <div className="card p-5 w-25 ">
     <div className="p-4">
-      <h2>Login Here</h2>
+      <h2 className='text-center'> Login Here</h2>
       <label>Email Address</label>
       <input type="email" className="form-control mt-2 mb-4" />
       <label htmlFor="">Password</label>

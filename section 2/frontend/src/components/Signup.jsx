@@ -36,7 +36,7 @@ const Signup = () => {
         <label htmlFor="">Password</label>
         <input type="password" className="form-control mt-2 mb-4" placeholder='password'/>
         <button className="col-6 text-center btn btn-danger w-100 mt-2">
-          Submit
+          Create account
         </button>
       </div>
     </div>
