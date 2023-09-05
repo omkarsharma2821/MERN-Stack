@@ -9,3 +9,11 @@
 .color{
   background-color: black;
 }
+.my-card-img{
+  object-fit: cover;
+  height: 200px;
+  transition-duration: 0.3s;
+}
+.my-card-img:hover{
+  transform: scale(1.2);
+}
