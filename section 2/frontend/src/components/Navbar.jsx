@@ -51,6 +51,11 @@ const Navbar = () => {
                 Product List
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/chatting">
+                Chatting
+              </NavLink>
+            </li>
           </ul>
           <button className="d-flex px-4 btn btn-outline-primary me-2">
             <NavLink className="nav-link" to="/login">

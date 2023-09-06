@@ -7,7 +7,7 @@ const ProductList = () => {
     const brands =[ 'Asus', 'Dell', 'Apple', 'Lenevo'];
     const searchProduct = (e) => {
         const search = e.target.value;
-        let filteredData = productData.filter((product) => { return product.model.tolowercase().includes(search.tolowercase()) })
+        let filteredData = productData.filter((product) => { return product.model.tolowercase().includes(search.tolowercase()) });
         setProductsArray(filteredData);
     }
     const filteredBrand = (e) => {
