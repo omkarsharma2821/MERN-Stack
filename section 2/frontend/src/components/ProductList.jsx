@@ -31,12 +31,13 @@ const ProductList = () => {
                     <div className="card">
                         <div className="card-body">
                             <h3>Filter Options</h3>
-                            <select name="" id=""></select>
-                            <option value="">Select Brand</option>
+                            <hr />
                             
-                            <select className='form-control'>
+                            <select className='form-control'onChange={filterBrand}>
+                            <option value="">Select Brand</option>
                                 {brands.map((b) =>(
-                                <option value = {b}>{b}</option>))}
+                                <option value = {b}>{b}</option>
+                                ))}
                             </select>
                         </div>
                     </div>
@@ -45,8 +46,8 @@ const ProductList = () => {
                     <div className='conatiner-fluid'>
                         {/* <h1>Product List</h1> */}
                         <div className="row">
-                            {productsArray.map((product) =>
-                                <div className="col-md-3">
+                            {productsArray.map((product) =>(
+                                <div className="col-md-3 mb-4">
                                     <div className="card" style={{ overflow: 'hidden' }}>
                                         <img src={product.Image} alt="" className="my-card-img" />
                                         <div className="card-body">
@@ -57,7 +58,7 @@ const ProductList = () => {
                                         </div>
                                     </div>
                                 </div>
-                            )}
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -67,4 +68,4 @@ const ProductList = () => {
     )
 }
 
-export default ProductList
+export default ProductList;
