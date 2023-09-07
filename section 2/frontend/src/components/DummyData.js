@@ -11,8 +11,8 @@ const productData = [
   },
   {
     id: 83578,
-    brand: "Asus",
-    model: "Zenbook",
+    brand: "Lenevo",
+    model: "ideapad",
     price: "78000",
     rating: 4.5,
     Image:
@@ -21,8 +21,8 @@ const productData = [
   },
   {
     id: 83578,
-    brand: "Asus",
-    model: "Zenbook",
+    brand: "Apple",
+    model: "Macbook",
     price: "78000",
     rating: 4.5,
     Image:
@@ -40,8 +40,8 @@ const productData = [
   },
   {
     id: 83578,
-    brand: "Asus",
-    model: "Zenbook",
+    brand: "Dell",
+    model: "Inspiron",
     price: "78000",
     rating: 4.5,
     Image:

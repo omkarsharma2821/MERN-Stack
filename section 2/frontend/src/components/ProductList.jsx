@@ -4,7 +4,7 @@ import productData from './DummyData';
 const ProductList = () => {
     const [productsArray, setProductsArray] = useState(productData);
 
-    const brands =[ 'Asus', 'Dell', 'Apple', 'Lenevo'];
+    const brands =[ 'Asus', 'Dell', 'Apple', 'Lenevo','HP'];
     const searchProduct = (e) => {
         const search = e.target.value;
         let filteredData = productData.filter((product) => { return product.model.toLowerCase().includes(search.toLowerCase());
