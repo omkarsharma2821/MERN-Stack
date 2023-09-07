@@ -5,8 +5,8 @@ const Chatting = () => {
     const inputRef = useRef(null);
 
     const [messageList, setMessageList] = useState([
-        { text : 'hello',sent:false},
-        { text : 'ha bhai sahab',sent:true},
+        { text : 'hello', sent:false},
+        { text : 'ha bhai sahab', sent:true},
         { text : 'kal kon sa exam hai',sent:false},
         { text : 'pta chale toh btana',sent:true}
     ]);
@@ -33,7 +33,7 @@ const Chatting = () => {
                 <div className="card-footer">
                     <div className="input-group">
                         <input type="text" className="form-control" ref= {inputRef} />
-                        <button className="btn btn-dark"><i class="fa-solid fa-paper-plane"></i></button>
+                        <button onClick={sendMessage} className="btn btn-dark"><i class="fa-solid fa-paper-plane"></i></button>
 
                     </div>
                 </div>
@@ -43,4 +43,4 @@ const Chatting = () => {
   )
 }
 
-export default Chatting
+export default Chatting;

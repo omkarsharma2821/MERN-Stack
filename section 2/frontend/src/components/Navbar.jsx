@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/chatting">
-                Chatting
+                Chatting-sir
               </NavLink>
             </li>
           </ul>
