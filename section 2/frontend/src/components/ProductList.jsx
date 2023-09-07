@@ -7,12 +7,14 @@ const ProductList = () => {
     const brands =[ 'Asus', 'Dell', 'Apple', 'Lenevo'];
     const searchProduct = (e) => {
         const search = e.target.value;
-        let filteredData = productData.filter((product) => { return product.model.tolowercase().includes(search.tolowercase()) });
+        let filteredData = productData.filter((product) => { return product.model.toLowerCase().includes(search.toLowerCase());
+         });
         setProductsArray(filteredData);
-    }
-    const filteredBrand = (e) => {
+    };
+    const filterBrand = (e) => {
         const search = e.target.value;
-        let filteredData = productData.filter((product) => { return product.model.tolowercase().includes(search.tolowercase()) })
+        let filteredData = productData.filter((product) => { return product.brand === search;
+        });
         setProductsArray(filteredData);
     }
     return (
@@ -21,7 +23,7 @@ const ProductList = () => {
             <header className='bg-dark'>
                 <div className='conatiner py-5'>
                     <h1 className="text-center mb-5 text-white fw-bold">Product Listing Page</h1>
-                    <input type="text" className='form-control w-75 m-auto' />
+                    <input type="text" className='form-control w-75 m-auto' onChange={searchProduct}/>
                 </div>
             </header>
             <div className="row mt-4">
