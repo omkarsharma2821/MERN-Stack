@@ -29,11 +29,13 @@
   border-radius: 20px 10px 10px 0px;
   width: fit-content;
 }
+
 .msg-sent{
-  background-color:green;
+  background-color:rgb(35, 127, 35);
 }
+
 .msg-rec{
-  background-color: purple ;
+  background-color: rgb(79, 25, 79);
   margin-left: auto;
   border-radius: 10px 20px 0px 10px;
 }
