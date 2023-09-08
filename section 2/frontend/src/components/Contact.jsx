@@ -46,7 +46,7 @@ const Contact = () => {
     <div className="card col-6 col-md-6 w-50" >
       <div className="p-4">
         <h2 className="text-center mt-2 mb-4 fw-semibold">Contact Us</h2>
-        <form onSubmit={}></form>
+        <form onSubmit={contactForm}></form>
         <label>Name</label>
         <input
           type="text"
