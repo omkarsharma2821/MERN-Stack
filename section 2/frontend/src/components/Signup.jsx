@@ -39,8 +39,8 @@ const Signup = () => {
   return (
     <>
     <div>
-    <div className="bg-body-secondary ">
-      <header className='bg-dark text-white w-50 mx-auto rounded '>
+    <div className="bg-body-secondary">
+      <header className='bg-dark text-white w-50 mx-auto rounded'>
       {/* <img src="Purple Illustration Sunset Desktop Wallpaper.png" alt="" /> */}
         <div className="container py-3 ">
           <h6 className="text-center display-6 fw-semibold ">
