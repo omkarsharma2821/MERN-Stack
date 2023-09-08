@@ -19,11 +19,11 @@ const Chatting = () => {
     }
 
   return (
-    <div>
-        <div className="container py-5">
-            <h2 className='mb-4 text-center'>My Messenger</h2>
-            <div className="card">
-                <div className="card-body chat-container">
+    <div className='bg-secondary'>
+        <div className="container py-4 ">
+            <h1 className='mb-4 text-center text-white bg-black w-25 mx-auto rounded py-2 fw-semibold'>My Messenger</h1>
+            <div className="card w-75 mx-auto">
+                <div className="card-body chat-container rounded">
                     {
                         messageList.map((message) => {
                             return <div className={`msg ${message.sent ? 'msg-sent': 'msg-rec'}`}>{message.text}</div>
