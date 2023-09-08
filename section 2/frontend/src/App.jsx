@@ -11,7 +11,8 @@ import StateManagement from './components/StateManagement';
 import Todo from './components/Todo';
 import Chat from './components/Chat';
 import ProductList from './components/ProductList';
-import Chatting from './components/Chatting';
+import Chatting from './components/Chat_sir';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path= "/chat" element= {<Chat />}/>
             <Route path= "/product" element= {<ProductList />}/>
             <Route path= "/chatting" element= {<Chatting />}/>
+            <Route path= "/contact" element= {<Contact />}/>
             <Route path= "*" element= {<NotFound />}/>
          </Routes>
         </BrowserRouter>

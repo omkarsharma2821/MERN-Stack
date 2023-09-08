@@ -44,7 +44,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/chat">
-                Chatting
+                Chat
               </NavLink>
             </li>
             <li className="nav-item">
@@ -54,7 +54,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/chatting">
-                Chatting-sir
+                Chat-sir
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">
+                ContactUs
               </NavLink>
             </li>
           </ul>

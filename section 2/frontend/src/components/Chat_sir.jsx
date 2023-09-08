@@ -21,8 +21,8 @@ const Chatting = () => {
   return (
     <div className='bg-secondary'>
         <div className="container py-4 ">
-            <h1 className='mb-4 text-center text-white bg-black w-25 mx-auto rounded py-2 fw-semibold'>My Messenger</h1>
-            <div className="card w-75 mx-auto">
+            <h1 className='mb-3 text-center text-white bg-black w-25 mx-auto rounded py-3 fw-semibold'>My Messenger</h1>
+            <div className="card w-50 mx-auto">
                 <div className="card-body chat-container rounded">
                     {
                         messageList.map((message) => {
@@ -34,7 +34,6 @@ const Chatting = () => {
                     <div className="input-group">
                         <input type="text" className="form-control" ref= {inputRef} />
                         <button onClick={sendMessage} className="btn btn-dark"><i class="fa-solid fa-paper-plane"></i></button>
-
                     </div>
                 </div>
             </div>

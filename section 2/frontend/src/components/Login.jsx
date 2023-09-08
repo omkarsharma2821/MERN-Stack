@@ -28,9 +28,9 @@ const Login = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center vh-100 bg-body-secondary">
-        <div className="card p-4 w-50">
-          <div className="p-4">
+      <div className="d-flex justify-content-center align-items-center vh-100 py-5 bg-body-secondary">
+        <div className="card py-3 p-5 w-50">
+          <div className="p-4 ">
             <h2 className="text-center fw-semibold display-6 mb-5"> Login Here</h2>
             <form onSubmit={loginForm.handleSubmit}>
               <label>Email </label>

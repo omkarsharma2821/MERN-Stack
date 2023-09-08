@@ -38,11 +38,12 @@ const Signup = () => {
 
   return (
     <>
-    <div className="bg-body-secondary">
-      <header className='bg-dark text-white w-50 mx-auto rounded'>
+    <div>
+    <div className="bg-body-secondary ">
+      <header className='bg-dark text-white w-50 mx-auto rounded '>
       {/* <img src="Purple Illustration Sunset Desktop Wallpaper.png" alt="" /> */}
-        <div className="container py-3">
-          <h6 className="text-center display-6 fw-semibold">
+        <div className="container py-3 ">
+          <h6 className="text-center display-6 fw-semibold ">
             Register for free, Hurry up!!
           </h6>
           <h4 className="text-center fw-light">
@@ -51,7 +52,7 @@ const Signup = () => {
         </div>
       </header>
       </div>
-      <div className="d-flex justify-content-center align-items-center vh-50 bg-body-secondary mt-0">
+      <div className="d-flex justify-content-center align-items-center vh-50 bg-body-secondary">
         <div className="card w-50 col-6 col-md-6 ">
           <div className="p-4">
             <h2 className="text-center fw-semibold ">SignUp</h2>
@@ -119,7 +120,8 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
+      </div>
+      </>
   );
 };
 
