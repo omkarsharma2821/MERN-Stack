@@ -28,8 +28,8 @@ const Contact = () => {
 
   return (
     <>
-      <div className="bg-body-secondary ">
-        <header className="bg-dark text-white w-50 mx-auto ">
+      <div className="bg-body-secondary p-5">
+        <header className="bg-dark text-white w-50 rounded mx-auto ">
           <div className="container py-3 ">
             <h2 className="text-center display-4 fw-semibold">
               Get in touch with us
