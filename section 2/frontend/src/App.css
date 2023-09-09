@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 .bg{
-  background-image: url(background.png);
+  background-image: url(img3.png);
 }
 .color{
   background-color: black;
@@ -38,4 +38,7 @@
   background-color: rgb(79, 25, 79);
   margin-left: auto;
   border-radius: 10px 20px 0px 10px;
+}
+.img1{
+  background-image: url(img4.png);
 }
