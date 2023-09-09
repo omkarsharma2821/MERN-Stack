@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="bg-body-secondary p-5">
+      <div className="bg-body-secondary img p-5">
         <header className="bg-dark text-white w-50 rounded mx-auto ">
           <div className="container py-3 ">
             <h2 className="text-center display-4 fw-semibold">
@@ -43,8 +43,9 @@ const Contact = () => {
             {/* </div> */}
           </div>
         </header>
-        <div className="d-flex justify-content-center align-items-center vh-80 bg-body-secondary">
-          <div className="card col-6 col-md-6 w-50">
+        {/* <div className="d-flex justify-content-center align-items-center vh-80 bg-body-secondary"> */}
+        <div className="">
+          <div className="card col-6 col-md-6 w-50 mx-auto">
             <div className="p-4">
               <h2 className="text-center mt-2 mb-4 fw-semibold">Contact Us</h2>
               <form onSubmit={contactForm.handleSubmit}>

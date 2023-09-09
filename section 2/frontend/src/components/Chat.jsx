@@ -14,10 +14,10 @@ const Chat = () => {
     
   return (
     <div>
-        <div className="container bg-dark vh-100 w-75">
-            <h1 className="text-center my-5 text-white fw-bold p-5">ChatApp</h1>
+        <div className="container bg-dark vh-100 w-50 img">
+            <h1 className="text-center my-5 text-light fw-bold p-5">ChatApp</h1>
             <div className="card p-5 w-75 mx-auto ">
-                <div className="card-header border-2 rounded-pill bg-secondary">
+                <div className="card-header rounded bg-light">
                     <input type="text" className="form-control" onKeyDown={addNewChat}/>
                 </div>
                     {/* d-flex se ek row me */}

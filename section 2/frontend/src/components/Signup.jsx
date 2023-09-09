@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import * as Yup from "yup";
 
 const SignupSchema = Yup.object().shape({
@@ -12,10 +13,11 @@ const SignupSchema = Yup.object().shape({
     .max(11, "Too Long!")
     .required("Required"),
   password: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
+    .required("Required")
+    .matches('^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$','Password is invalid'),
   email: Yup.string().email("Invalid email").required("Required"),
+  confirm: Yup.string()
+  .oneOf([Yup.ref('password'), null], 'Passwords must match')
 });
 
 const Signup = () => {
@@ -38,11 +40,9 @@ const Signup = () => {
 
   return (
     <>
-        <div className="bg-body-secondary ">
-      {/* <div > */}
-          <header className='bg-dark text-white w-50 img1 mx-auto rounded'>
-            {/* <img src="Purple Illustration Sunset Desktop Wallpaper.png" alt="" /> */}
-            <div className="container py-3 ">
+        <div className="bg-body-secondary img">
+          <header className='bg-dark text-white w-50 mx-auto rounded '>
+            <div className="container py-3">
               <h6 className="text-center display-6 fw-semibold ">
                 Register for free, Hurry up!!
               </h6>
@@ -51,15 +51,14 @@ const Signup = () => {
               </h4>
             </div>
           </header>
-        {/* </div> */}
-        <div className="d-flex justify-content-center align-items-center vh-50 bg-body-secondary">
-          <div className="card w-50 col-6 col-md-6">
+        <div className="d-flex justify-content-center img align-items-center vh-50 bg-body-secondary">
+          <div className="card w-50 col-6 col-md-6 ">
             <div className="p-5">
               <h2 className="text-center fw-semibold ">SignUp</h2>
               <form onSubmit={signupForm.handleSubmit}>
                 <label>Name</label>
                 <span style={{ fontSize: 10, marginLeft: "10px", color: "red" }}>
-                  {signupForm.errors.name}
+                  {signupForm.touched.name && signupForm.errors.name}
                 </span>
                 <input
                   id="name"
@@ -71,7 +70,7 @@ const Signup = () => {
                 />
                 <label>Email</label>
                 <span style={{ fontSize: 10, marginLeft: "10px", color: "red" }}>
-                  {signupForm.errors.email}
+                  {signupForm.touched.email && signupForm.errors.email}
                 </span>
                 <input
                   id="email"
@@ -83,7 +82,7 @@ const Signup = () => {
                 />
                 <label>Phone</label>
                 <span style={{ fontSize: 10, marginLeft: "10px", color: "red" }}>
-                  {signupForm.errors.phone}
+                  {signupForm.touched.phone && signupForm.errors.phone}
                 </span>
                 <input
                   id="phone"
@@ -95,7 +94,19 @@ const Signup = () => {
                 />
                 <label>Password</label>
                 <span style={{ fontSize: 10, marginLeft: "10px", color: "red" }}>
-                  {signupForm.errors.password}
+                  {signupForm.touched.password && signupForm.errors.password}
+                </span>
+                <input
+                  id="password"
+                  onChange={signupForm.handleChange}
+                  value={signupForm.values.password}
+                  type="password"
+                  className="form-control mt-2 mb-4"
+                  placeholder="password"
+                />
+                <label>Confirm Password</label>
+                <span style={{ fontSize: 10, marginLeft: "10px", color: "red" }}>
+                  {signupForm.touched.password && signupForm.errors.password}
                 </span>
                 <input
                   id="password"
@@ -113,7 +124,7 @@ const Signup = () => {
                 </button>
                 <span className="d-flex justify-content-center mb-2">Already have an account  -
                   <span>
-                    <a href="/login">Login</a>
+                    <NavLink to ="/login">Login</NavLink>
                   </span>
                 </span>
               </form>

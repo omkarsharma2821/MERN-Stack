@@ -23,7 +23,7 @@ const Todo = () => {
     }
     
   return (
-    <div className='bg vh-100 '>
+    <div className='img vh-100 '>
         <div className="container p-5">
             <h1 className="text-center fw-bold bg-black text-white my-0 rounded w-75 mx-auto py-5">!! My To Do List !!</h1>
             <div className="card w-75 mx-auto p-4">

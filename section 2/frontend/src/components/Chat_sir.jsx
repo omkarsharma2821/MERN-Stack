@@ -19,10 +19,10 @@ const Chatting = () => {
     }
 
   return (
-    <div className='bg-secondary'>
+    <div className='bg-body-secondary img1'>
         <div className="container py-4 ">
             <h1 className='mb-3 text-center text-white bg-black w-25 mx-auto rounded py-3 fw-semibold'>My Messenger</h1>
-            <div className="card w-50 mx-auto">
+            <div className="card w-50 mx-auto img">
                 <div className="card-body chat-container rounded">
                     {
                         messageList.map((message) => {
